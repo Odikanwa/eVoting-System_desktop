@@ -1,0 +1,121 @@
+﻿<Page x:Class="E_voting_Nigeria.RegisterVoter_page"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:E_voting_Nigeria"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="REGISTER VOTER">
+
+    <Grid>
+
+        <!--<Grid.Background>
+            <ImageBrush ImageSource="C:\Users\OdikanwaMichael\Pictures\evoting photos\main_background0.jpg"/>
+        </Grid.Background>-->
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+            <!--<ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>-->
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <!--Containing border-->
+        <Border Grid.Column="1" Grid.Row="0" Grid.ColumnSpan="4" Grid.RowSpan="14" BorderBrush="#FFFFFF" BorderThickness="5">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="1*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+
+                <Label Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="2" Height="30" Width="130" VerticalAlignment="Top" HorizontalAlignment="Left" HorizontalContentAlignment="Center"  Content="REGISTER VOTER" Background="#FFFFFF" Foreground="#FF193605" FontFamily="Segoe UI Black" FontWeight="Bold" FontSize="13"/>
+
+                <StackPanel Grid.Column="0" Grid.Row="0">
+                    <Border x:Name="voterPhoto" BorderThickness="2" BorderBrush="White" Grid.Column="1" Grid.Row="4" Height="100" Width="150" HorizontalAlignment="Center" Margin="0,40,0,5">
+                        <Image x:Name="voterimage" Source="C:\Users\OdikanwaMichael\Pictures\evoting photos\registerIcon.png" Width="150" Height="100"/>
+                    </Border>
+                    <Label Height="auto" Width="auto"  VerticalAlignment="Top" HorizontalAlignment="Left" Margin="43,0,0,0" HorizontalContentAlignment="Center"  Content="FIRST NAME" Background="#FFFFFF" Foreground="#FF193605" FontFamily="Segoe UI Black" FontWeight="Bold" FontSize="9" VerticalContentAlignment="Bottom"/>
+                    <TextBox x:Name="first_name" HorizontalAlignment="Center" Height="35" Width="250" Margin="0,0,0,10" TextWrapping="Wrap" Text="{x:Null}" VerticalAlignment="Center"  BorderThickness="1" Background="White"  BorderBrush="#FF193605" Foreground="#FF011501" SelectionBrush="#FF87B4E2"  FontSize="13" FontFamily="Segoe UI Emoji" FontWeight="Bold" TextAlignment="Center" Padding="10" CaretBrush="White" />
+                    <Label Height="auto" Width="auto"  VerticalAlignment="Top" HorizontalAlignment="Left" Margin="43,0,0,0" HorizontalContentAlignment="Center"  Content="LAST NAME" Background="#FFFFFF" Foreground="#FF193605" FontFamily="Segoe UI Black" FontWeight="Bold" FontSize="9" VerticalContentAlignment="Bottom"/>
+                    <TextBox x:Name="last_name" HorizontalAlignment="Center" Height="35" Width="250" Margin="0,0,0,10"  TextWrapping="Wrap" Text="{x:Null}" VerticalAlignment="Center" BorderThickness="1" Background="White" BorderBrush="#FF193605" Foreground="#FF011501" SelectionBrush="#FFF1F3F5" FontSize="16" FontFamily="Segoe UI Emoji" FontWeight="Bold" TextAlignment="Center" Padding="10"/>
+                    <Label Height="auto" Width="auto"  VerticalAlignment="Top" HorizontalAlignment="Left" Margin="43,0,0,0" HorizontalContentAlignment="Center"  Content="DATE OF BIRTH" Background="#FFFFFF" Foreground="#FF193605" FontFamily="Segoe UI Black" FontWeight="Bold" FontSize="9" VerticalContentAlignment="Bottom"/>
+                    <TextBox x:Name="dob" HorizontalAlignment="Center" Height="35" Width="250" Margin="0,0,0,10"  TextWrapping="Wrap" Text="{x:Null}" VerticalAlignment="Center" BorderThickness="1" Background="White" BorderBrush="#FF193605" Foreground="#FF011501" SelectionBrush="#FFF1F3F5" FontSize="16" FontFamily="Segoe UI Emoji" FontWeight="Bold" TextAlignment="Center" Padding="10"/>
+                    <Label Height="auto" Width="auto"  VerticalAlignment="Top" HorizontalAlignment="Left" Margin="43,0,0,0" HorizontalContentAlignment="Center"  Content="PERM. ADDRESS" Background="#FFFFFF" Foreground="#FF193605" FontFamily="Segoe UI Black" FontWeight="Bold" FontSize="9" VerticalContentAlignment="Bottom"/>
+                    <TextBox x:Name="perm_address" HorizontalAlignment="Center" Height="35" Width="250" Margin="0,0,0,10"  TextWrapping="Wrap" Text="{x:Null}" VerticalAlignment="Center" BorderThickness="1" Background="White" BorderBrush="#FF193605" Foreground="#FF011501" SelectionBrush="#FFF1F3F5" FontSize="16" FontFamily="Segoe UI Emoji" FontWeight="Bold" TextAlignment="Center" Padding="10"/>
+                    <Label Height="auto" Width="auto"  VerticalAlignment="Top" HorizontalAlignment="Left" Margin="43,0,0,0" HorizontalContentAlignment="Center"  Content="LGA OF ORIGIN" Background="#FFFFFF" Foreground="#FF193605" FontFamily="Segoe UI Black" FontWeight="Bold" FontSize="9" VerticalContentAlignment="Bottom"/>
+                    <TextBox x:Name="lga" HorizontalAlignment="Center" Height="35" Width="250" Margin="0,0,0,10"  TextWrapping="Wrap" Text="{x:Null}" VerticalAlignment="Center" BorderThickness="1" Background="White" BorderBrush="#FF193605" Foreground="#FF011501" SelectionBrush="#FFF1F3F5" FontSize="16" FontFamily="Segoe UI Emoji" FontWeight="Bold" TextAlignment="Center" Padding="10"/>
+                    <Label Height="auto" Width="auto"  VerticalAlignment="Top" HorizontalAlignment="Left" Margin="43,0,0,0" HorizontalContentAlignment="Center"  Content="STATE OF ORIGIN" Background="#FFFFFF" Foreground="#FF193605" FontFamily="Segoe UI Black" FontWeight="Bold" FontSize="9" VerticalContentAlignment="Bottom"/>
+                    <TextBox x:Name="soo" HorizontalAlignment="Center" Height="35" Width="250" Margin="0,0,0,10"  TextWrapping="Wrap" Text="{x:Null}" VerticalAlignment="Center" BorderThickness="1" Background="White" BorderBrush="#FF193605" Foreground="#FF011501" SelectionBrush="#FFF1F3F5" FontSize="16" FontFamily="Segoe UI Emoji" FontWeight="Bold" TextAlignment="Center" Padding="10"/>
+                </StackPanel>
+
+                <StackPanel Grid.Column="1" Grid.Row="0">
+                    <Border x:Name="fingerprint_voter" BorderThickness="2" BorderBrush="#FF043C04" Grid.Column="1" Grid.Row="4" Height="120" Width="250" Margin="0,20,0,5" Background="#FFFFFF" HorizontalAlignment="Center"/>
+                    <Label Height="auto" Width="auto"  VerticalAlignment="Top" HorizontalAlignment="Left" Margin="43,0,0,0" HorizontalContentAlignment="Center"  Content="NATIONALITY" Background="#FFFFFF" Foreground="#FF193605" FontFamily="Segoe UI Black" FontWeight="Bold" FontSize="9" VerticalContentAlignment="Bottom"/>
+                    <TextBox x:Name="nationality" HorizontalAlignment="Center" Height="35" Width="250" Margin="0,0,0,10"  TextWrapping="Wrap" Text="{x:Null}" VerticalAlignment="Center" BorderThickness="1" Background="White" BorderBrush="#FF193605" Foreground="#FF011501" SelectionBrush="#FFF1F3F5" FontSize="16" FontFamily="Segoe UI Emoji" FontWeight="Bold" TextAlignment="Center" Padding="10"/>
+                    <Label Height="auto" Width="auto"  VerticalAlignment="Top" HorizontalAlignment="Left" Margin="43,0,0,0" HorizontalContentAlignment="Center"  Content="PHONE NUMBER" Background="#FFFFFF" Foreground="#FF193605" FontFamily="Segoe UI Black" FontWeight="Bold" FontSize="9" VerticalContentAlignment="Bottom"/>
+                    <TextBox x:Name="phone_no" HorizontalAlignment="Center" Height="35" Width="250" Margin="0,0,0,10"  TextWrapping="Wrap" Text="{x:Null}" VerticalAlignment="Center" BorderThickness="1" Background="White" BorderBrush="#FF193605" Foreground="#FF011501" SelectionBrush="#FFF1F3F5" FontSize="16" FontFamily="Segoe UI Emoji" FontWeight="Bold" TextAlignment="Center" Padding="10"/>
+                    <Label Height="auto" Width="auto"  VerticalAlignment="Top" HorizontalAlignment="Left" Margin="43,0,0,0" HorizontalContentAlignment="Center"  Content="EMAIL" Background="#FFFFFF" Foreground="#FF193605" FontFamily="Segoe UI Black" FontWeight="Bold" FontSize="9" VerticalContentAlignment="Bottom"/>
+                    <TextBox x:Name="email" HorizontalAlignment="Center" Height="35" Width="250" Margin="0,0,0,10"  TextWrapping="Wrap" Text="{x:Null}" VerticalAlignment="Center" BorderThickness="1" Background="White" BorderBrush="#FF193605" Foreground="#FF011501" SelectionBrush="#FFF1F3F5" FontSize="16" FontFamily="Segoe UI Emoji" FontWeight="Bold" TextAlignment="Center" Padding="10"/>
+                    <Label Height="auto" Width="auto"  VerticalAlignment="Top" HorizontalAlignment="Left" Margin="43,0,0,0" HorizontalContentAlignment="Center"  Content="THUMBPRINT" Background="#FFFFFF" Foreground="#FF193605" FontFamily="Segoe UI Black" FontWeight="Bold" FontSize="9" VerticalContentAlignment="Bottom"/>
+                    <Button Height="35" Width="250" HorizontalAlignment="Center"  VerticalAlignment="Center" Margin="0,0,0,10" BorderBrush="#FF011501" BorderThickness="1.5" Background="#FF193605" Foreground="White">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="2*"/>
+                                <ColumnDefinition Width="1*"/>
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition/>
+                            </Grid.RowDefinitions>
+                            <Button Grid.Column="0" Grid.Row="0" Height="80" Width="200" Content="THUMBPRINT" FontWeight="Bold" FontSize="15" FontFamily="Segoe UI Black" HorizontalAlignment="Center" VerticalAlignment="Center" Background="White" Foreground="#FF193605"/>
+                            <Image x:Name="voteImage" Source ="C:\Users\OdikanwaMichael\Pictures\evoting photos\thumb5.jfif" Grid.Column="1" Grid.Row="0" Height="80" Width="80" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Grid>
+                    </Button>
+
+                    <Label Height="auto" Width="auto"  VerticalAlignment="Top" HorizontalAlignment="Left" Margin="43,0,0,0" HorizontalContentAlignment="Center"  Content="TAKE PHOTO" Background="#FFFFFF" Foreground="#FF193605" FontFamily="Segoe UI Black" FontWeight="Bold" FontSize="9" VerticalContentAlignment="Bottom"/>
+                    <Button Height="35" Width="250" HorizontalAlignment="Center"  VerticalAlignment="Center" Margin="0,0,0,20" BorderBrush="#FF011501" BorderThickness="1.5" Background="#FF193605" Foreground="White">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="2*"/>
+                                <ColumnDefinition Width="1*"/>
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition/>
+                            </Grid.RowDefinitions>
+                            <Button Grid.Column="0" Grid.Row="0" Height="80" Width="200" Content="TAKE PHOTO" FontWeight="Bold" FontSize="15" FontFamily="Segoe UI Black" HorizontalAlignment="Center" VerticalAlignment="Center" Background="White" Foreground="#FF193605"/>
+                            <Image x:Name="cameraImage" Source ="C:\Users\OdikanwaMichael\Pictures\evoting photos\camera2.jpg" Grid.Column="1" Grid.Row="0" Height="80" Width="80" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Grid>
+                    </Button>
+
+                    <Button x:Name="register_voter_button" Click="Register_voter_button_Click" Height="45" Width="250" Content="REGISTER" FontSize="16" FontFamily="Segoe UI Black" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,10" BorderBrush="#FFFFFF" Background="#FF193605" Foreground="White" />
+                </StackPanel>
+            </Grid>
+        </Border>
+        <!--<Button x:Name="previous_button" Grid.Column="0" Grid.Row="11" Height="45" Width="160" Content="PREVIOUS PAGE" FontSize="15" FontFamily="Segoe UI Black" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="10,0,0,10" BorderBrush="#FF011501" Background="#FFFFFF" Foreground="#FF193605" BorderThickness="6" Click="Home_screen_Click"/>-->
+
+
+    </Grid>
+</Page>

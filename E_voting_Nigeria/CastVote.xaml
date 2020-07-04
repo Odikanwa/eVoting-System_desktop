@@ -1,0 +1,34 @@
+﻿<Window x:Class="E_voting_Nigeria.CastVote"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:E_voting_Nigeria"
+        mc:Ignorable="d"
+        Title="CAST VOTE" Height="450" Width="800" WindowState="Maximized">
+
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="C:\Users\OdikanwaMichael\Pictures\evoting photos\main_background0.jpg"/>
+        </Grid.Background>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <Frame Name="CastVote_frames" Source="VoterVerification_page.xaml" NavigationUIVisibility="Hidden" Grid.Column="0" Grid.Row="0" Width="auto" Grid.ColumnSpan="4" Grid.RowSpan="7" Height="auto"/>
+        <Button x:Name="Home_screen_button" Click="Home_screen_Click" Grid.Column="0" Grid.Row="6" Height="33" Width="160" Content="HOME SCREEN" FontSize="15" FontFamily="Segoe UI Black" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="0,0,0,0" BorderBrush="#FF011501" Background="#FFFFFF" Foreground="#FF193605" BorderThickness="6"/>
+    </Grid>
+</Window>

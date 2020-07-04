@@ -1,0 +1,20 @@
+﻿E_voting_Nigeria
+
+
+winexe
+C#
+.cs
+C:\Users\OdikanwaMichael\source\repos\Nigerian Electronic Voting System\E_voting_Nigeria\obj\Debug\
+E_voting_Nigeria
+none
+false
+DEBUG;TRACE
+C:\Users\OdikanwaMichael\source\repos\Nigerian Electronic Voting System\E_voting_Nigeria\App.xaml
+221119493937
+
+28-1888696787
+17-1826762785
+AdminDashboard.xaml;AdminDashboard_mainPage.xaml;AdminLogin.xaml;CastVote.xaml;MainWindow.xaml;RegisterAdmin_page.xaml;RegisterCandidate_page1.xaml;RegisterCandidate_page2.xaml;RegisterElection_page.xaml;RegisterParty_page.xaml;RegisterVoter_page.xaml;SuperAdminDashboard_mainPage.xaml;SuperAdminLogin.xaml;SuperAdmin_Dashboard.xaml;ViewCandidates_page.xaml;ViewAdmins_page.xaml;ViewElections_page.xaml;ViewParties_page.xaml;ViewUsers_page.xaml;ViewVoters_page.xaml;VoteCandidate_page.xaml;VoterVerification_page.xaml;
+
+True
+

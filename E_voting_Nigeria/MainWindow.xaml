@@ -1,0 +1,72 @@
+﻿<Window x:Class="E_voting_Nigeria.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:E_voting_Nigeria"
+        mc:Ignorable="d"
+        Icon="Logo/inec1.ico"
+        Title="INEC, 2019" Height="450" Width="800" WindowState="Maximized">
+
+    <Grid x:Name="Index">
+
+
+        <Grid.Background>
+            <ImageBrush ImageSource="C:\Users\OdikanwaMichael\Pictures\evoting photos\main_background2.jpg"/>
+        </Grid.Background>
+        <Grid.BindingGroup>
+            <BindingGroup/>
+        </Grid.BindingGroup>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <!--INEC Official  Write Up-->
+
+        <Grid Grid.ColumnSpan ="3" HorizontalAlignment="Center">
+            <StackPanel Orientation="Horizontal" >
+                <Image Source ="C:\Users\OdikanwaMichael\Pictures\evoting photos\nca1.png" Height="80" Width="80" VerticalAlignment="Top" Margin="5"/>
+                <TextBlock Text="NIGERIAN ELECTRONIC VOTING SYSTEM (INDEPENDENT NIGERIAN ELECTORAL COMMISSION)"  FontWeight="Bold" FontSize="25" FontFamily="Segoe UI Black" HorizontalAlignment="Center" Padding="15, 10, 15, 35" VerticalAlignment="Top" Width="auto"/>
+            </StackPanel>
+        </Grid>
+
+        <!--System Set up Button-->
+        <Button x:Name= "system_setup_button"  Grid.Column="0" Grid.Row="2" Height="150" Width="250" Margin="10,0,0,10" HorizontalAlignment="Center"  VerticalAlignment="Center" Background="#FF1EA018" BorderBrush="White" Click="System_setup_Click" >
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="2*"/>
+                    <ColumnDefinition Width="1*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Button Grid.Column="0" Grid.Row="0" Height="80" Width="180" Content="SYS. SETUP" FontWeight="Bold" FontSize="20" FontFamily="Segoe UI Black" HorizontalAlignment="Center"/>
+                <Image x:Name="settingsImage" Source ="C:\Users\OdikanwaMichael\Pictures\evoting photos\setup1.png" Grid.Column="1" Grid.Row="0" Height="80" Width="80"/>
+            </Grid>
+        </Button>
+
+        <!--Cast Vote Button-->
+        <Button x:Name="cast_vote_button"  Grid.Column="3" Grid.Row="2" Height="150" Width="250" Margin="0,0,10,10" HorizontalAlignment="Center"  VerticalAlignment="Center" Background="#FF1EA018" BorderBrush="White" Click="Cast_vote_button_Click">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="2*"/>
+                    <ColumnDefinition Width="1*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Button Grid.Column="0" Grid.Row="0" Height="80" Width="180" Content="CAST VOTE" FontWeight="Bold" FontSize="20" FontFamily="Segoe UI Black" HorizontalAlignment="Center"/>
+                <Image x:Name="voteImage" Source ="C:\Users\OdikanwaMichael\Pictures\evoting photos\vote1.jfif" Grid.Column="1" Grid.Row="0" Height="80" Width="80"/>
+            </Grid>
+        </Button>
+    </Grid>
+</Window>

@@ -1,0 +1,114 @@
+﻿<Page x:Class="E_voting_Nigeria.VoteCandidate_page"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:E_voting_Nigeria"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="VoteCandidate_page">
+
+    <Grid Background="#FFFFFF">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+
+        <StackPanel Orientation="Vertical" Grid.Column="0" Grid.Row="0">
+            <TextBlock Grid.Column="0" Grid.Row="0" Height="auto" Width="1300" HorizontalAlignment="Center" VerticalAlignment="Top" Text="PRESIDENTIAL ELECTION (Please Tap on one Image Only!)" Margin="5,10,20,2" Padding="20,20,20,20" FontWeight="Bold" FontSize="20" FontFamily="Gill Sans Ultra Bold"  TextAlignment="Center" TextWrapping="Wrap"  Background="White" Foreground="#FF193605"/>
+
+            <WrapPanel Grid.Column="0" Grid.Row="0">
+                <StackPanel Orientation="Vertical" Margin="30,20,40,20">
+
+                    <Ellipse Width="200" Height="200">
+                        <Ellipse.Fill>
+                            <ImageBrush ImageSource="C:\Users\OdikanwaMichael\Pictures\evoting photos\AtikuAbubakar.jpg"/>
+                        </Ellipse.Fill>
+                    </Ellipse>
+
+                    <TextBlock x:Name="candidate1" Text="ATIKU ABUBAKAR" Height="auto" Width="auto" Foreground="#FF193605" Background="#FFFFFF" Padding="5,5,5,5" VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold" FontSize="15" FontFamily="Segoe UI Black" Margin="3"/>
+                    <TextBlock x:Name="party1" Text="PEOPLE'S DEMOCRATIC PARTY (PDP)" Height="auto" Width="auto" Foreground="#FF193605" Background="#FFFFFF" Padding="5,0,5,5" VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold" FontSize="14" FontFamily="Segoe UI Black"/>
+
+                </StackPanel>
+                <StackPanel Orientation="Vertical" Margin="30,20,40,20">
+                    <Ellipse Width="200" Height="200">
+                        <Ellipse.Fill>
+                            <ImageBrush ImageSource="C:\Users\OdikanwaMichael\Pictures\evoting photos\AhmedBuhari.jpg" />
+                        </Ellipse.Fill>
+                    </Ellipse>
+
+                    <TextBlock x:Name="candidate2" Text="AHMED BUHARI" Height="auto" Width="auto" Foreground="#FF193605" Background="#FFFFFF" Padding="5,5,5,5" VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold" FontSize="15" FontFamily="Segoe UI Black" Margin="3"/>
+                    <TextBlock x:Name="party2" Text="NATIONAL CONCIENCE PARTY (NCP)" Height="auto" Width="auto" Foreground="#FF193605" Background="#FFFFFF" Padding="5,0,5,5" VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold" FontSize="14" FontFamily="Segoe UI Black"/>
+                </StackPanel>
+                <StackPanel Orientation="Vertical" Margin="30,20,40,20">
+                    <Ellipse Width="200" Height="200">
+                        <Ellipse.Fill>
+                            <ImageBrush ImageSource="C:\Users\OdikanwaMichael\Pictures\evoting photos\Bukola Saraki.jpg" />
+                        </Ellipse.Fill>
+                    </Ellipse>
+
+                    <TextBlock x:Name="candidate3" Text="BUKOLA SARAKI" Height="auto" Width="auto" Foreground="#FF193605" Background="#FFFFFF" Padding="5,5,5,5" VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold" FontSize="15" FontFamily="Segoe UI Black" Margin="3"/>
+                    <TextBlock x:Name="party3" Text="LABOUR PARTY (LP)" Height="auto" Width="auto" Foreground="#FF193605" Background="#FFFFFF" Padding="5,0,5,5" VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold" FontSize="14" FontFamily="Segoe UI Black"/>
+                </StackPanel>
+
+                <StackPanel Orientation="Vertical" Margin="30,20,40,20">
+                    <Ellipse Width="200" Height="200">
+                        <Ellipse.Fill>
+                            <ImageBrush ImageSource="C:\Users\OdikanwaMichael\Pictures\evoting photos\fela durotoye.jpg" />
+                        </Ellipse.Fill>
+                    </Ellipse>
+
+                    <TextBlock x:Name="candidate4" Text="FELA DUROTOYE" Height="auto" Width="auto" Foreground="#FF193605" Background="#FFFFFF" Padding="5,5,5,5" VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold" FontSize="15" FontFamily="Segoe UI Black" Margin="3"/>
+                    <TextBlock x:Name="party4" Text="DEMOCRATIC PEOPPLES'S PARTY (DPP)" Height="auto" Width="auto" Foreground="#FF193605" Background="#FFFFFF" Padding="5,0,5,5" VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold" FontSize="14" FontFamily="Segoe UI Black" />
+                </StackPanel>
+
+                <StackPanel Orientation="Vertical" Margin="30,20,40,20">
+                    <Ellipse Width="200" Height="200">
+                        <Ellipse.Fill>
+                            <ImageBrush ImageSource="C:\Users\OdikanwaMichael\Pictures\evoting photos\kingsley moghalu.jpg" />
+                        </Ellipse.Fill>
+                    </Ellipse>
+
+                    <TextBlock x:Name="candidate5" Text="KINGSLEY MOGHALU" Height="auto" Width="auto" Foreground="#FF193605" Background="#FFFFFF" Padding="5,5,5,5" VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold" FontSize="15" FontFamily="Segoe UI Black" Margin="3"/>
+                    <TextBlock x:Name="party5" Text="PROGRESSIVE PEOPLES ALLIANCE (PPA)" Height="auto" Width="auto" Foreground="#FF193605" Background="#FFFFFF" Padding="5,0,5,5" VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold" FontSize="14" FontFamily="Segoe UI Black"/>
+                </StackPanel>
+
+                <StackPanel Orientation="Vertical" Margin="30,20,40,20">
+                    <Ellipse Width="200" Height="200">
+                        <Ellipse.Fill>
+                            <ImageBrush ImageSource="C:\Users\OdikanwaMichael\Pictures\evoting photos\omotoye sowore.jpg" />
+                        </Ellipse.Fill>
+                    </Ellipse>
+
+                    <TextBlock x:Name="candidate6" Text="OMOTOYE SOWORE" Height="auto" Width="auto" Foreground="#FF193605" Background="#FFFFFF" Padding="5,5,5,5" VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold" FontSize="15" FontFamily="Segoe UI Black" Margin="3"/>
+                    <TextBlock x:Name="party6" Text="SOCIALIST PARTY OF NIGERIA (SPN)" Height="auto" Width="auto" Foreground="#FF193605" Background="#FFFFFF" Padding="5,0,5,5" VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold" FontSize="14" FontFamily="Segoe UI Black"/>
+                </StackPanel>
+
+                <StackPanel Orientation="Vertical" Margin="30,20,40,20">
+                    <Ellipse Width="200" Height="200">
+                        <Ellipse.Fill>
+                            <ImageBrush ImageSource="C:\Users\OdikanwaMichael\Pictures\evoting photos\Muhammad Buhari.jpg" />
+                        </Ellipse.Fill>
+                    </Ellipse>
+
+                    <TextBlock x:Name="candidate7" Text="MUHAMMAD BUHARI" Height="auto" Width="auto" Foreground="#FF193605" Background="#FFFFFF" Padding="5,5,5,5" VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold" FontSize="15" FontFamily="Segoe UI Black" Margin="3"/>
+                    <TextBlock x:Name="APC" Text="ALL PROGRESSIVES PARTY (APC)" Height="auto" Width="auto" Foreground="#FF193605" Background="#FFFFFF" Padding="5,0,5,5" VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold" FontSize="14" FontFamily="Segoe UI Black"/>
+                </StackPanel>
+
+                <StackPanel Orientation="Vertical" Margin="30,20,40,20">
+                    <Ellipse Width="200" Height="200">
+                        <Ellipse.Fill>
+                            <ImageBrush ImageSource="C:\Users\OdikanwaMichael\Pictures\evoting photos\patrick2.jpg" />
+                        </Ellipse.Fill>
+                    </Ellipse>
+
+                    <TextBlock x:Name="candidate8" Text="EKWEDIKE PATRICK" Height="auto" Width="auto" Foreground="#FF193605" Background="#FFFFFF" Padding="5,5,5,5" VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold" FontSize="15" FontFamily="Segoe UI Black" Margin="3"/>
+                    <TextBlock x:Name="party8" Text="ACCORD PARTY (AP)" Height="auto" Width="auto" Foreground="#FF193605" Background="#FFFFFF" Padding="5,0,5,5" VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold" FontSize="14" FontFamily="Segoe UI Black"/>
+                </StackPanel>
+            </WrapPanel>
+        </StackPanel>
+    </Grid>
+</Page>

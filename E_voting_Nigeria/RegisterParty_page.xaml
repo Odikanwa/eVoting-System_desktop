@@ -1,0 +1,78 @@
+﻿<Page x:Class="E_voting_Nigeria.RegisterParty_page"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:E_voting_Nigeria"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="REGISTER PAGE">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <Border Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="4" Grid.RowSpan="3" BorderBrush="white" BorderThickness="3" Margin="0,10,0,0">
+
+            <StackPanel Grid.Column="0" Grid.Row="0" Orientation="Vertical">
+                <Label Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="2" Height="auto" Width="auto" VerticalAlignment="Top" HorizontalAlignment="Left" HorizontalContentAlignment="Center"  Content="PARTY REGISTRATION" Background="#FFFFFF" Foreground="#FF193605" FontFamily="Segoe UI Black" FontWeight="Bold" FontSize="13" Padding="10,10,10,10" Margin="0,0,0,0"/>
+
+                <Border Height="150" Width="200" Background="White" HorizontalAlignment="Center" BorderBrush="#FFFFFF" BorderThickness="2" Margin="0,10,0,20">
+                    <Image x:Name="party_logo" />
+                </Border>
+
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+
+                    <StackPanel Orientation="Vertical" HorizontalAlignment="Center">
+                        <Label Height="auto" Width="auto"  VerticalAlignment="Top" HorizontalAlignment="Left" Margin="0,0,0,0" HorizontalContentAlignment="Center"  Content="NAME OF PARTY" Background="#FFFFFF" Foreground="#FF193605" FontFamily="Segoe UI Black" FontWeight="Bold" FontSize="9" VerticalContentAlignment="Bottom"/>
+                        <TextBox x:Name="party_name" Height="35" Width="200" HorizontalAlignment="Center" VerticalAlignment="Center" HorizontalContentAlignment="Center" Margin="0,0,50,20"/>
+                    </StackPanel>
+                    <StackPanel Orientation="Vertical" HorizontalAlignment="Center">
+                        <Label Height="auto" Width="auto"  VerticalAlignment="Top" HorizontalAlignment="Left" Margin="0,0,0,0" HorizontalContentAlignment="Center"  Content="PARTY ABBREVIATION" Background="#FFFFFF" Foreground="#FF193605" FontFamily="Segoe UI Black" FontWeight="Bold" FontSize="9" VerticalContentAlignment="Bottom"/>
+                        <TextBox x:Name="party_abbreviation" Height="35" Width="200" Margin="0,0,0,20" HorizontalAlignment="Center" VerticalAlignment="Center" HorizontalContentAlignment="Center"/>
+                    </StackPanel>
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+
+                    <StackPanel Orientation="Vertical" HorizontalAlignment="Center">
+                        <Label Height="auto" Width="auto"  VerticalAlignment="Top" HorizontalAlignment="Left" Margin="0,0,0,0" HorizontalContentAlignment="Center"  Content="HEAD OFFICE" Background="#FFFFFF" Foreground="#FF193605" FontFamily="Segoe UI Black" FontWeight="Bold" FontSize="9" VerticalContentAlignment="Bottom"/>
+                        <TextBox x:Name="head_office" Height="35" Width="200" HorizontalAlignment="Center" VerticalAlignment="Center" HorizontalContentAlignment="Center" Margin="0,0,50,20"/>
+                    </StackPanel>
+                    <StackPanel Orientation="Vertical" HorizontalAlignment="Center">
+                        <Label Height="auto" Width="auto"  VerticalAlignment="Top" HorizontalAlignment="Left" Margin="0,0,0,0" HorizontalContentAlignment="Center"  Content="PARTY SLOGAN" Background="#FFFFFF" Foreground="#FF193605" FontFamily="Segoe UI Black" FontWeight="Bold" FontSize="9" VerticalContentAlignment="Bottom"/>
+                        <TextBox x:Name="party_slogan" Height="35" Width="200" Margin="0,0,0,20" HorizontalAlignment="Center" VerticalAlignment="Center" HorizontalContentAlignment="Center"/>
+                    </StackPanel>
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+
+                    <StackPanel Orientation="Vertical" HorizontalAlignment="Center">
+                        <Label Height="auto" Width="auto"  VerticalAlignment="Top" HorizontalAlignment="Left" Margin="0,0,0,0" HorizontalContentAlignment="Center"  Content="PARTY MISSION" Background="#FFFFFF" Foreground="#FF193605" FontFamily="Segoe UI Black" FontWeight="Bold" FontSize="9" VerticalContentAlignment="Bottom"/>
+                        <TextBox x:Name="party_mission" Height="35" Width="200" HorizontalAlignment="Center" VerticalAlignment="Center" HorizontalContentAlignment="Center" Margin="0,0,50,10"/>
+                    </StackPanel>
+                    <StackPanel Orientation="Vertical" HorizontalAlignment="Center">
+                        <Label Height="auto" Width="auto"  VerticalAlignment="Top" HorizontalAlignment="Left" Margin="0,0,0,0" HorizontalContentAlignment="Center"  Content="PARTY VISION" Background="#FFFFFF" Foreground="#FF193605" FontFamily="Segoe UI Black" FontWeight="Bold" FontSize="9" VerticalContentAlignment="Bottom"/>
+                        <TextBox x:Name="party_vision" Height="35" Width="200" Margin="0,0,0,10" HorizontalAlignment="Center" VerticalAlignment="Center" HorizontalContentAlignment="Center"/>
+                    </StackPanel>
+                </StackPanel>
+
+                <Button Height="40" Width="250" Content="UPLOAD LOGO" FontSize="16" FontFamily="Segoe UI Black" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,10" BorderThickness="2" BorderBrush="#FF193605" Background="#FFFFFF" Foreground="#FF193605" />
+                <Button x:Name="enroll_party_button" Click="Enroll_party_button_Click" Height="40" Width="250" Content="ENROLL PARTY" FontSize="16" FontFamily="Segoe UI Black" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,10" BorderBrush="#FFFFFF" Background="#FF193605" Foreground="White" />
+            </StackPanel>
+        </Border>
+    </Grid>
+</Page>

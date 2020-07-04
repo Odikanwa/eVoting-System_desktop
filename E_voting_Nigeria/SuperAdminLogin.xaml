@@ -1,0 +1,67 @@
+﻿<Window x:Class="E_voting_Nigeria.SuperAdminLogin"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:E_voting_Nigeria"
+        mc:Ignorable="d"
+        Title=" Super-Admin Login" Height="450" Width="800" WindowState="Maximized">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="C:\Users\OdikanwaMichael\Pictures\evoting photos\main_background0.jpg"/>
+        </Grid.Background>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <!--stack pannel 1-->
+        <StackPanel Grid.Column="1" Grid.Row="3" Grid.RowSpan="3">
+            <Label Height="25" Width="140" Content="SUPER-ADMIN LOGIN" Background="White" Foreground="#FF193605" FontFamily="Segoe UI Black" FontSize="12" HorizontalAlignment="Center" Margin="0,0,0,10"/>
+
+            <Border BorderThickness="2" BorderBrush="White" Grid.Column="1" Grid.Row="4" Height="100" Width="150" HorizontalAlignment="Center">
+                <Image x:Name="adminPhoto" Source="C:\Users\OdikanwaMichael\Pictures\evoting photos\registerIcon.png" Width="150" Height="100"/>
+            </Border>
+            <TextBox x:Name="username" Grid.Column="1" Grid.Row="3" HorizontalAlignment="Center" Height="50" Width="260" Margin="0,20,0,20" TextWrapping="Wrap" Text="UserID" VerticalAlignment="Center"  BorderThickness="3" Background="White"  BorderBrush="#FFEFF2F9" Foreground="#FF011501" SelectionBrush="#FFF1F3F5" FontSize="16" FontFamily="Segoe UI Emoji" FontWeight="Bold" TextAlignment="Center" Padding="10" />
+            <TextBox x:Name="password" Grid.Column="1" Grid.Row="3" HorizontalAlignment="Center" Height="50" Width="260" TextWrapping="Wrap" Text="Password" VerticalAlignment="Center" BorderThickness="3" Background="White" BorderBrush="#FFEFF2F9" Foreground="#FF011501" SelectionBrush="#FFF1F3F5" FontSize="16" FontFamily="Segoe UI Emoji" FontWeight="Bold" TextAlignment="Center" Padding="10"/>
+        </StackPanel>
+
+        <!-- Stack pannel 2-->
+        <StackPanel Grid.Column="2" Grid.Row="3" Grid.RowSpan="3" Margin="0,0,0,10">
+            <Border BorderThickness="2" BorderBrush="#FF043C04" Grid.Column="1" Grid.Row="4" Height="150" Width="200" Background="#FFFFFF" HorizontalAlignment="Center">
+            </Border>
+
+            <Button Grid.Column="1" Grid.Row="2" Height="50" Width="200" HorizontalAlignment="Center"  VerticalAlignment="Center" Margin="0,20,0,10" BorderBrush="#FF011501" BorderThickness="1.5" Background="#FF193605" Foreground="White">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="2*"/>
+                        <ColumnDefinition Width="1*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <Button Grid.Column="0" Grid.Row="0" Height="80" Width="150" Content="THUMBPRINT" FontWeight="Bold" FontSize="15" FontFamily="Segoe UI Black" HorizontalAlignment="Center" VerticalAlignment="Center" Background="White" Foreground="#FF193605"/>
+                    <Image x:Name="voteImage" Source ="C:\Users\OdikanwaMichael\Pictures\evoting photos\thumb5.jfif" Grid.Column="1" Grid.Row="0" Height="80" Width="80" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                </Grid>
+            </Button>
+
+            <Button x:Name="authenticate_superAdmin_button" Click="Authenticate_superAdmin_Click" Height="40" Width="200" Content="AUTHENTICATE" FontSize="15" FontFamily="Segoe UI Black" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,10" BorderBrush="#FF011501" Background="#FF193605" Foreground="White" />
+            <Button  Height="25" Width="160" Content="Sign in as Admin" FontSize="12" FontFamily="Segoe UI Black" HorizontalAlignment="Center" VerticalAlignment="Center" BorderBrush="#FF011501" Background="#FF193605" Foreground="White" Click="Sign_in_as_Admin_Click"/>
+        </StackPanel>
+        <Button x:Name="Home_screen_button"  Grid.Column="0" Grid.Row="5" Height="45" Width="160" Content="HOME SCREEN" FontSize="15" FontFamily="Segoe UI Black" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="10,0,0,10" BorderBrush="#FF011501" Background="#FFFFFF" Foreground="#FF193605" BorderThickness="6" Click="Home_screen_Click"/>
+
+
+    </Grid>
+</Window>
+
